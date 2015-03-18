@@ -7,7 +7,7 @@ import org.springframework.integration.annotation.ServiceActivator;
 @MessageEndpoint
 public class Translator {
 
-	@Value ("$language") String language;	//	Requested language to translate into.
+	@Value ("${language}") String language;	//	Requested language to translate into.
 
 	/**
 	 *	Translate into the given language / dialect. 
